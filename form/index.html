@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formDifficult</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+      <div class="divLeft">
+          <form action="" name="form1" id="form1" method="POST">
+              <h1>Form class test</h1><br>
+              <p id="p1"><label for="email">E-mail address:</label> 
+              <input type="email" name="email" id="email" maxlength="20" size="20" 
+              placeholder="name.surname@gmail.com" required /><br><br></p>
+
+              <p><label for="cCardNumber" id="label2">Credit card number:</label>
+              <input type="number" name="cCardNumber" id="cCardNumber" maxlength="16" size="20" 
+              placeholder="0000 0000 0000 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" />
+              <label for="cCardNumber">[Optional]</label><br><br></p>
+
+              <p id="p1"><label for="cCardType">Credit card type:</label>
+              <select name="cCardType" id="cCardType" size="2" style="padding-right: 75px;">
+                  <option value="unknown">Unknown</option>
+                  <option value="master card">Master Card</option>
+                  <option value="visa card">Visa Card</option>
+                  <option value="maestro card">Maestro Card</option>
+              </select><br><br>
+
+              <label for="pName">Personal name:</label>
+              <input type="text" name="pName" id="pName" maxlength="20" size="20" 
+              placeholder="Name Surname" required/> <br><br>
+
+              <label for="age">Age:</label>
+              <input type="number" name="age" id="age" maxlength="2" required /><br><br>
+
+              <label for="weight">Weight:</label>
+              <input type="number" name="weight" id="weight" maxlength="3" required /><br><br>
+
+              <label for="hPage">Home page:</label>
+              <input type="url" name="hPage" id="hPage" placeholder="http://www.myUrl.com" required /><br><br>
+
+              <label for="aName">Access name:</label>
+              <input type="text" name="aName" id="aName" required /><br><br>
+
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" required /><br><br>
+
+              <label for="cPassword">Confirm password:</label><input type="password" name="cPassword" id="cPassword" required /> <br><br>
+
+              <label for="pReminder">Password reminder:</label><input type="text" name="pReminder" id="pReminder" /><br><br></p>
+
+              <span class="span1">When approved, receive notification by:</span><br>
+              <p id="p2"><label for="email2">E-mail:</label> 
+              <input type="checkbox" name="email2" id="email2" /><br>
+              <label for="phone">Phone:</label> 
+              <input type="checkbox" name="phone" id="phone" /><br><br></p>
+
+              <span class="span1">Subscription type:</span><br>
+              <p id="p2"><label for="administrator">Administrator:</label>
+              <input type="radio" name="radio" id="administrator" /><br>
+              <label for="user">User:</label>
+              <input type="radio" name="radio" id="user" /><br>
+              <label for="guest">Guest:</label>
+              <input type="radio" name="radio" id="guest" /><br></p>
+
+              <label for="tButton" id="label3">Toggle button:</label>
+              <input type="button" value="On" id="button1" />
+              <hr><br>
+
+              <p id="p2"><label for="agree">Agree with the terms:</label>
+              <input type="checkbox" name="agree" id="agree" /></p><br>
+              <hr><br>
+              <input type="submit" value="Submit subscription" id="button2" />
+          </form>
+      </div>
+
+      <div class="divRight">
+        <div class="divRight__div1">
+          <h1>Form CAPTCHA plug-in test</h1><br>
+          <form action="" name="form2" id="form2" method="post">
+            <fieldset class="fieldest1">
+              <legend><b>Enter the following text:</b></legend>
+              <p><input type="color" name="code" id="code" value="10th" readonly />
+              <input type="text" name="code2" id="code2" required /></p>
+              <input type="button" value="Redraw">              
+            </fieldset><br>
+            <hr><br>
+            <input type="submit" value="Submit" id="button2" />
+          </form>
+        </div>
+
+        <div class="divRight__div2">
+          <h1>Form Date plug-in test</h1><br>
+          <form action="" name="form3" id="form3" method="post">
+            <fieldset class="fieldest1">
+              <legend><b>Date</b>(Form 2004-07-14 to 2004-07-20)</legend>
+              <p><input type="date" name="date" id="date" /></p>          
+            </fieldset><br>
+            <hr><br>
+            <input type="submit" value="Schedule" id="button2" />
+          </form>
+        </div>
+
+        <div class="divRight__div3">
+          <h1>Form encoded password test</h1><br>
+          <form action="" name="form4" id="form4" method="post">
+            <p id="p3"><label for="aName2">Access name:</label><input type="text" name="aName2" id="aName2" /><br><br>
+            <label for="password2">Password:</label><input type="password" name="password2" id="password2" /><br><br></p>
+            <hr><br>
+            <input type="submit" value="Login" id="button2" />
+          </form>
+        </div>
+
+        <div class="divRight__div4">
+          <h1>Form upload file test</h1><br>
+          <form action="" name="form4" id="form4" method="post">
+            <p><label for="image">GIF image file:</label><input type="text" name="image" id="image" />
+            <input type="submit" value="Browse..."><br><br></p>
+            <hr><br>
+            <input type="submit" value="Login" id="button2" />
+          </form>
+        </div>
+
+      </div>
+
+      <div class="divBottom">
+        <h1>Linked selecet plug-in test</h1><br>
+          <form action="" name="form2" id="form2" method="post">
+            <fieldset class="fieldest2">
+              <legend><b>Choose location</b></legend>
+              <h2><span>Continent</span> <span>Country</span> <span>Location</span></h2>
+              <input list="continent" name="continent" />
+              <datalist id="continent">
+                <option value="North America"></option>
+                <option value="South Amerika"></option>
+                <option value="Eurasia"></option>
+                <option value="Africa"></option>
+                <option value="Australia"></option></datalist>
+
+                <input type="button" value=">" />
+
+                <select name="country" id="country" size="3" style="padding-right: 80px;">
+                  <option value="Select country">Select country</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Turkey">Turkey</option>
+              </select>
+
+              <input type="button" value=">" />
+
+                <select name="location" id="location" size="3" style="padding-right: 80px;">
+                  <option value="Select location">Select location</option>
+                  <option value="New York">New York</option>
+                  <option value="Toronto">Toronto</option>
+                  <option value="Baku">Baku</option>
+                  <option value="Istanbul">Istanbul</option>
+              </select>
+            </fieldset><br><br>
+            <hr><br>
+            <input type="submit" value="Go" id="button2"/>
+          </form>
+      </div>
+  </body>
+</html>
